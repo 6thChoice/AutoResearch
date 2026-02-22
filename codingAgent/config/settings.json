@@ -1,0 +1,21 @@
+{
+  "monitor": {
+    "poll_interval_ms": 1000,
+    "use_inotify": true
+  },
+  "session": {
+    "timeout_minutes": 30,
+    "max_turns": 100
+  },
+  "paths": {
+    "commands": "/app/volumes/commands",
+    "reports": "/app/volumes/reports",
+    "workspace": "/app/volumes/workspace",
+    "sessions": "/app/volumes/sessions"
+  },
+  "logging": {
+    "level": "info",
+    "container_log": "/app/logs/monitor.log",
+    "host_log": "./logs/host-monitor.log"
+  }
+}

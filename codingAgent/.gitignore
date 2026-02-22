@@ -1,0 +1,25 @@
+# Environment files
+.env
+
+# Logs
+logs/*.log
+
+# Node modules (if any in workspace)
+node_modules/
+
+# Docker volumes content (exclude generated files)
+volumes/commands/pending/*.md
+volumes/commands/processed/*.md
+volumes/reports/pending/*.md
+volumes/reports/archived/*.md
+volumes/sessions/*.json
+volumes/workspace/*
+
+# Keep .gitkeep files
+!volumes/**/.gitkeep
+!logs/.gitkeep
+
+# OS files
+.DS_Store
+Thumbs.db
+volumes/logs/*.log

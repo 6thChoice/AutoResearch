@@ -1,0 +1,12 @@
+[
+  {
+    "content": "Update AGENT_MISSION.md with project progress",
+    "status": "completed",
+    "activeForm": "Updating AGENT_MISSION.md"
+  },
+  {
+    "content": "Create detailed report in pending directory",
+    "status": "in_progress",
+    "activeForm": "Creating detailed report"
+  }
+]

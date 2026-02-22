@@ -1,0 +1,27 @@
+[
+  {
+    "content": "克隆 GitHub 项目 Histoformer",
+    "status": "completed",
+    "activeForm": "已完成克隆"
+  },
+  {
+    "content": "分析项目结构",
+    "status": "completed",
+    "activeForm": "已完成分析"
+  },
+  {
+    "content": "查看 README 理解项目用途",
+    "status": "completed",
+    "activeForm": "已完成文档查看"
+  },
+  {
+    "content": "安装项目依赖",
+    "status": "in_progress",
+    "activeForm": "正在安装项目依赖"
+  },
+  {
+    "content": "运行项目并记录结果",
+    "status": "pending",
+    "activeForm": "运行项目"
+  }
+]
