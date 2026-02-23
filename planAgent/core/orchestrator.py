@@ -51,6 +51,24 @@ class Orchestrator:
         self.history: list[dict] = []
         self.ctx = ContextManager()
 
+    def _normalize_steps(self, steps: list) -> list[dict]:
+        """Ensure each step has title/description fields to avoid KeyError."""
+        normalized: list[dict] = []
+        for s in steps or []:
+            if isinstance(s, str):
+                normalized.append({"title": s, "description": s})
+                continue
+            if isinstance(s, dict):
+                title = s.get("title") or s.get("description") or "未命名步骤"
+                desc = s.get("description") or title
+                normalized.append({
+                    "title": title,
+                    "description": desc,
+                    "constraints": s.get("constraints", ""),
+                    "expected_output": s.get("expected_output", ""),
+                })
+        return normalized
+
     def run(self, goal: str):
         """主入口"""
         print(f"\n{'='*60}")
@@ -65,10 +83,11 @@ class Orchestrator:
     def plan(self, goal: str):
         """调用 LLM 拆解目标"""
         print("[Plan Agent] 正在拆解目标为执行步骤...")
-        self.steps = llm.call_json(PLANNER_SYSTEM, f"项目目标：{goal}")
+        raw_steps = llm.call_json(PLANNER_SYSTEM, f"项目目标：{goal}")
+        self.steps = self._normalize_steps(raw_steps)
         print(f"[Plan Agent] 已拆解为 {len(self.steps)} 个步骤：")
         for i, step in enumerate(self.steps, 1):
-            print(f"  {i}. {step['title']}")
+            print(f"  {i}. {step.get('title', '未命名步骤')}")
         print()
 
     def execute_loop(self):
@@ -95,7 +114,7 @@ class Orchestrator:
 
             # 发送任务给 CodingAgent v2
             task_id = coding_bridge.send_task(
-                description=step["description"],
+                description=step.get("description", step.get("title", "")),
                 context=context,
                 constraints=step.get("constraints", ""),
                 expected_output=step.get("expected_output", ""),
@@ -118,7 +137,7 @@ class Orchestrator:
 
             # 记录历史
             self.history.append({
-                "step": step["title"],
+                "step": step.get("title", "未命名步骤"),
                 "task_id": task_id,
                 "status": status,
             })
@@ -130,15 +149,15 @@ class Orchestrator:
     def _evaluate(self, step: dict, report: dict) -> dict:
         """调用 LLM 评估报告"""
         msg = f"""原始任务：
-标题：{step['title']}
-描述：{step['description']}
+标题：{step.get('title', '未命名步骤')}
+描述：{step.get('description', '')}
 
 执行报告：
 状态：{report.get('status', 'unknown')}
 内容：
 {report.get('body', '无内容')[:3000]}
 
-剩余步骤：{[s['title'] for s in self.steps[self.current_step + 1:]]}"""
+剩余步骤：{[s.get('title', '未命名步骤') for s in self.steps[self.current_step + 1:]]}"""
 
         return llm.call_json(EVALUATOR_SYSTEM, msg)
 
@@ -160,12 +179,7 @@ class Orchestrator:
 
         elif action == "replan":
             new_steps = decision.get("adjusted_steps", [])
-            normalized = []
-            for s in new_steps:
-                if isinstance(s, str):
-                    normalized.append({"title": s, "description": s})
-                elif isinstance(s, dict):
-                    normalized.append(s)
+            normalized = self._normalize_steps(new_steps)
             if normalized:
                 self.steps = self.steps[:self.current_step] + normalized
                 print(f"[Plan Agent] 已重规划，新计划共 {len(self.steps)} 步")

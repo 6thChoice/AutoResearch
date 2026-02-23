@@ -42,7 +42,7 @@ class ContextManager:
     def init_project(self, goal: str, steps: list[dict]):
         """项目开始时，生成 global + project 上下文"""
         steps_text = "\n".join(
-            f"  {i}. {s['title']}: {s.get('description', '')[:80]}"
+            f"  {i}. {s.get('title', '未命名步骤')}: {s.get('description', '')[:80]}"
             for i, s in enumerate(steps, 1)
         )
         msg = f"项目目标：{goal}\n\n执行计划：\n{steps_text}"
@@ -62,7 +62,7 @@ class ContextManager:
             for h in history
         ) or "  （无）"
 
-        msg = f"""当前步骤：{step_num}/{total} - {step['title']}
+        msg = f"""当前步骤：{step_num}/{total} - {step.get('title', '未命名步骤')}
 描述：{step.get('description', '')}
 约束：{step.get('constraints', '无')}
 
