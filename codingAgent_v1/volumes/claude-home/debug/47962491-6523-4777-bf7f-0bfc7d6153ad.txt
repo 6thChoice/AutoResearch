@@ -1,0 +1,104 @@
+2026-02-23T04:19:46.365Z [DEBUG] [init] configureGlobalMTLS starting
+2026-02-23T04:19:46.365Z [DEBUG] [init] configureGlobalMTLS complete
+2026-02-23T04:19:46.365Z [DEBUG] [init] configureGlobalAgents starting
+2026-02-23T04:19:46.367Z [DEBUG] [init] configureGlobalAgents complete
+2026-02-23T04:19:46.373Z [DEBUG] [STARTUP] Loading MCP configs...
+2026-02-23T04:19:46.376Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-02-23T04:19:46.377Z [DEBUG] [STARTUP] Running setup()...
+2026-02-23T04:19:46.380Z [DEBUG] Loading skills from: managed=/etc/claude-code/.claude/skills, user=/home/node/.claude/skills, project=[]
+2026-02-23T04:19:46.381Z [DEBUG] Error log sink initialized
+2026-02-23T04:19:46.393Z [DEBUG] [STARTUP] setup() completed in 16ms
+2026-02-23T04:19:46.393Z [DEBUG] [STARTUP] Loading commands and agents...
+2026-02-23T04:19:46.394Z [DEBUG] Git remote URL: null
+2026-02-23T04:19:46.394Z [DEBUG] No git remote URL found
+2026-02-23T04:19:46.395Z [DEBUG] Loaded 0 unique skills (0 unconditional, 0 conditional, managed: 0, user: 0, project: 0, additional: 0, legacy commands: 0)
+2026-02-23T04:19:46.397Z [DEBUG] Found 0 plugins (0 enabled, 0 disabled)
+2026-02-23T04:19:46.397Z [DEBUG] getPluginSkills: Processing 0 enabled plugins
+2026-02-23T04:19:46.397Z [DEBUG] Total plugin skills loaded: 0
+2026-02-23T04:19:46.397Z [DEBUG] Total plugin commands loaded: 0
+2026-02-23T04:19:46.397Z [DEBUG] Registered 0 hooks from 0 plugins
+2026-02-23T04:19:46.397Z [DEBUG] Total plugin agents loaded: 0
+2026-02-23T04:19:46.398Z [DEBUG] [claudeai-mcp] Checking gate (cached)...
+2026-02-23T04:19:46.398Z [DEBUG] [claudeai-mcp] Gate returned: false
+2026-02-23T04:19:46.398Z [DEBUG] [claudeai-mcp] Disabled via gate
+2026-02-23T04:19:46.398Z [DEBUG] getSkills returning: 0 skill dir commands, 0 plugin skills, 3 bundled skills
+2026-02-23T04:19:46.400Z [DEBUG] Writing to temp file: /home/node/.claude.json.tmp.2190.1771820386400
+2026-02-23T04:19:46.400Z [DEBUG] Preserving file permissions: 100600
+2026-02-23T04:19:46.400Z [DEBUG] Temp file written successfully, size: 282 bytes
+2026-02-23T04:19:46.400Z [DEBUG] Applied original permissions to temp file
+2026-02-23T04:19:46.400Z [DEBUG] Renaming /home/node/.claude.json.tmp.2190.1771820386400 to /home/node/.claude.json
+2026-02-23T04:19:46.400Z [DEBUG] File /home/node/.claude.json written atomically
+2026-02-23T04:19:46.401Z [DEBUG] [STARTUP] Commands and agents loaded in 8ms
+2026-02-23T04:19:46.402Z [DEBUG] [LSP MANAGER] initializeLspServerManager() called
+2026-02-23T04:19:46.402Z [DEBUG] [LSP MANAGER] Created manager instance, state=pending
+2026-02-23T04:19:46.402Z [DEBUG] [LSP MANAGER] Starting async initialization (generation 1)
+2026-02-23T04:19:46.402Z [DEBUG] Total LSP servers loaded: 0
+2026-02-23T04:19:46.402Z [DEBUG] Failed to fetch org fast mode status, defaulting to disabled
+2026-02-23T04:19:46.402Z [DEBUG] [STARTUP] MCP configs loaded in 29ms
+2026-02-23T04:19:46.402Z [DEBUG] [LSP SERVER MANAGER] getAllLspServers returned 0 server(s)
+2026-02-23T04:19:46.402Z [DEBUG] LSP manager initialized with 0 servers
+2026-02-23T04:19:46.402Z [DEBUG] LSP server manager initialized successfully
+2026-02-23T04:19:46.403Z [DEBUG] LSP notification handlers registered successfully for all 0 server(s)
+2026-02-23T04:19:46.405Z [DEBUG] installed_plugins.json doesn't exist, returning empty V2 object
+2026-02-23T04:19:46.405Z [DEBUG] Initialized versioned plugins system with 0 plugins
+2026-02-23T04:19:46.450Z [DEBUG] [Perfetto] initializePerfettoTracing called, env value: undefined
+2026-02-23T04:19:46.450Z [DEBUG] [3P telemetry] isTelemetryEnabled=false (CLAUDE_CODE_ENABLE_TELEMETRY=undefined)
+2026-02-23T04:19:46.548Z [DEBUG] Getting matching hook commands for SessionStart with query: startup
+2026-02-23T04:19:46.548Z [DEBUG] Found 0 hook matchers in settings
+2026-02-23T04:19:46.548Z [DEBUG] Matched 0 unique hooks for query "startup" (0 before deduplication)
+2026-02-23T04:19:46.549Z [DEBUG] [FileIndex] getProjectFiles called, respectGitignore=true
+2026-02-23T04:19:46.549Z [DEBUG] [FileIndex] getFilesUsingGit called
+2026-02-23T04:19:46.549Z [DEBUG] [FileIndex] not a git repo, returning null
+2026-02-23T04:19:46.549Z [DEBUG] [FileIndex] git ls-files returned null, falling back to ripgrep
+2026-02-23T04:19:46.557Z [DEBUG] installPluginsForHeadless: starting
+2026-02-23T04:19:46.558Z [DEBUG] Found 0 installed plugins (V2 format)
+2026-02-23T04:19:46.558Z [DEBUG] installPluginsForHeadless: no missing plugins or marketplaces configured
+2026-02-23T04:19:46.566Z [DEBUG] Writing to temp file: /home/node/.claude.json.tmp.2190.1771820386566
+2026-02-23T04:19:46.566Z [DEBUG] Preserving file permissions: 100600
+2026-02-23T04:19:46.566Z [DEBUG] Temp file written successfully, size: 282 bytes
+2026-02-23T04:19:46.566Z [DEBUG] Applied original permissions to temp file
+2026-02-23T04:19:46.566Z [DEBUG] Renaming /home/node/.claude.json.tmp.2190.1771820386566 to /home/node/.claude.json
+2026-02-23T04:19:46.566Z [DEBUG] File /home/node/.claude.json written atomically
+2026-02-23T04:19:46.567Z [DEBUG] Total plugin output styles loaded: 0
+2026-02-23T04:19:46.580Z [DEBUG] Ripgrep first use test: PASSED (mode=builtin, path=/usr/lib/node_modules/@anthropic-ai/claude-code/vendor/ripgrep/x64-linux/rg)
+2026-02-23T04:19:46.582Z [DEBUG] Writing to temp file: /home/node/.claude.json.tmp.2190.1771820386582
+2026-02-23T04:19:46.582Z [DEBUG] Preserving file permissions: 100600
+2026-02-23T04:19:46.582Z [DEBUG] Temp file written successfully, size: 282 bytes
+2026-02-23T04:19:46.582Z [DEBUG] Applied original permissions to temp file
+2026-02-23T04:19:46.582Z [DEBUG] Renaming /home/node/.claude.json.tmp.2190.1771820386582 to /home/node/.claude.json
+2026-02-23T04:19:46.582Z [DEBUG] File /home/node/.claude.json written atomically
+2026-02-23T04:19:46.585Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2026-02-23T04:19:46.585Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2026-02-23T04:19:46.585Z [DEBUG] Hooks: Found 0 total hooks in registry
+2026-02-23T04:19:46.585Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2026-02-23T04:19:46.585Z [DEBUG] Sending 1 skills via attachment (initial, 1 total sent)
+2026-02-23T04:19:46.586Z [WARN] [3P telemetry] Event dropped (no event logger initialized): user_prompt
+2026-02-23T04:19:46.587Z [DEBUG] Getting matching hook commands for UserPromptSubmit with query: undefined
+2026-02-23T04:19:46.587Z [DEBUG] Found 0 hook matchers in settings
+2026-02-23T04:19:46.587Z [DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+2026-02-23T04:19:46.590Z [DEBUG] autocompact: tokens=778 threshold=167000 effectiveWindow=180000
+2026-02-23T04:19:46.591Z [DEBUG] Auto tool search disabled: 0 tokens (threshold: 20000, 10% of context) [source: query]
+2026-02-23T04:19:46.604Z [DEBUG] Writing to temp file: /home/node/.claude.json.tmp.2190.1771820386604
+2026-02-23T04:19:46.604Z [DEBUG] Preserving file permissions: 100600
+2026-02-23T04:19:46.604Z [DEBUG] Temp file written successfully, size: 282 bytes
+2026-02-23T04:19:46.604Z [DEBUG] Applied original permissions to temp file
+2026-02-23T04:19:46.604Z [DEBUG] Renaming /home/node/.claude.json.tmp.2190.1771820386604 to /home/node/.claude.json
+2026-02-23T04:19:46.604Z [DEBUG] File /home/node/.claude.json written atomically
+2026-02-23T04:19:46.606Z [DEBUG] attribution header x-anthropic-billing-header: cc_version=2.1.50.b97; cc_entrypoint=sdk-cli; cch=00000;
+2026-02-23T04:19:46.607Z [DEBUG] [API:request] Creating client, ANTHROPIC_CUSTOM_HEADERS present: false, has Authorization header: false
+2026-02-23T04:19:46.607Z [DEBUG] [API:auth] OAuth token check starting
+2026-02-23T04:19:46.608Z [DEBUG] [API:auth] OAuth token check complete
+2026-02-23T04:19:46.633Z [DEBUG] [FileIndex] ripgrep: 210 files in 84ms
+2026-02-23T04:19:46.633Z [DEBUG] [FileIndex] Not in bundled mode, using Fuse.js fallback
+2026-02-23T04:19:46.633Z [DEBUG] [FileIndex] cache refresh completed in 85ms (257 files)
+2026-02-23T04:19:46.661Z [DEBUG] Security messages are fresh (<1h old), skipping fetch
+2026-02-23T04:19:47.498Z [ERROR] API error (attempt 1/11): 401 401 {"type":"error","error":{"type":"authentication_error","message":"Invalid bearer token"},"request_id":"req_011CYQMjgHojR3WSo3ezosRK"}
+2026-02-23T04:19:47.509Z [ERROR] Error in API request: 401 {"type":"error","error":{"type":"authentication_error","message":"Invalid bearer token"},"request_id":"req_011CYQMjgHojR3WSo3ezosRK"}
+2026-02-23T04:19:47.510Z [ERROR] Error: Error: 401 {"type":"error","error":{"type":"authentication_error","message":"Invalid bearer token"},"request_id":"req_011CYQMjgHojR3WSo3ezosRK"}
+    at Z4.generate (file:///usr/lib/node_modules/@anthropic-ai/claude-code/cli.js:324:28108)
+    at QS.makeStatusError (file:///usr/lib/node_modules/@anthropic-ai/claude-code/cli.js:363:2195)
+    at QS.makeRequest (file:///usr/lib/node_modules/@anthropic-ai/claude-code/cli.js:363:5420)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+2026-02-23T04:19:47.512Z [DEBUG] Getting matching hook commands for Stop with query: undefined
+2026-02-23T04:19:47.512Z [DEBUG] Found 0 hook matchers in settings
+2026-02-23T04:19:47.512Z [DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)

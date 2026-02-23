@@ -1,0 +1,464 @@
+2026-02-22T14:16:53.098Z [DEBUG] [init] configureGlobalMTLS starting
+2026-02-22T14:16:53.099Z [DEBUG] [init] configureGlobalMTLS complete
+2026-02-22T14:16:53.099Z [DEBUG] [init] configureGlobalAgents starting
+2026-02-22T14:16:53.100Z [DEBUG] [init] configureGlobalAgents complete
+2026-02-22T14:16:53.106Z [DEBUG] [STARTUP] Loading MCP configs...
+2026-02-22T14:16:53.109Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-02-22T14:16:53.109Z [DEBUG] [STARTUP] Running setup()...
+2026-02-22T14:16:53.112Z [DEBUG] Loading skills from: managed=/etc/claude-code/.claude/skills, user=/home/node/.claude/skills, project=[]
+2026-02-22T14:16:53.113Z [DEBUG] Error log sink initialized
+2026-02-22T14:16:53.124Z [DEBUG] [STARTUP] setup() completed in 15ms
+2026-02-22T14:16:53.124Z [DEBUG] [STARTUP] Loading commands and agents...
+2026-02-22T14:16:53.125Z [DEBUG] Git remote URL: null
+2026-02-22T14:16:53.125Z [DEBUG] No git remote URL found
+2026-02-22T14:16:53.127Z [DEBUG] Loaded 0 unique skills (0 unconditional, 0 conditional, managed: 0, user: 0, project: 0, additional: 0, legacy commands: 0)
+2026-02-22T14:16:53.128Z [DEBUG] Found 0 plugins (0 enabled, 0 disabled)
+2026-02-22T14:16:53.128Z [DEBUG] getPluginSkills: Processing 0 enabled plugins
+2026-02-22T14:16:53.128Z [DEBUG] Total plugin skills loaded: 0
+2026-02-22T14:16:53.128Z [DEBUG] Total plugin commands loaded: 0
+2026-02-22T14:16:53.128Z [DEBUG] Registered 0 hooks from 0 plugins
+2026-02-22T14:16:53.128Z [DEBUG] Total plugin agents loaded: 0
+2026-02-22T14:16:53.128Z [DEBUG] [claudeai-mcp] Checking gate (cached)...
+2026-02-22T14:16:53.128Z [DEBUG] [claudeai-mcp] Gate returned: false
+2026-02-22T14:16:53.128Z [DEBUG] [claudeai-mcp] Disabled via gate
+2026-02-22T14:16:53.129Z [DEBUG] getSkills returning: 0 skill dir commands, 0 plugin skills, 3 bundled skills
+2026-02-22T14:16:53.130Z [DEBUG] Writing to temp file: /home/node/.claude.json.tmp.4024.1771769813130
+2026-02-22T14:16:53.130Z [DEBUG] Preserving file permissions: 100600
+2026-02-22T14:16:53.130Z [DEBUG] Temp file written successfully, size: 282 bytes
+2026-02-22T14:16:53.130Z [DEBUG] Applied original permissions to temp file
+2026-02-22T14:16:53.130Z [DEBUG] Renaming /home/node/.claude.json.tmp.4024.1771769813130 to /home/node/.claude.json
+2026-02-22T14:16:53.130Z [DEBUG] File /home/node/.claude.json written atomically
+2026-02-22T14:16:53.131Z [DEBUG] [STARTUP] Commands and agents loaded in 7ms
+2026-02-22T14:16:53.131Z [DEBUG] [LSP MANAGER] initializeLspServerManager() called
+2026-02-22T14:16:53.131Z [DEBUG] [LSP MANAGER] Created manager instance, state=pending
+2026-02-22T14:16:53.131Z [DEBUG] [LSP MANAGER] Starting async initialization (generation 1)
+2026-02-22T14:16:53.132Z [DEBUG] Total LSP servers loaded: 0
+2026-02-22T14:16:53.132Z [DEBUG] Failed to fetch org fast mode status, defaulting to disabled
+2026-02-22T14:16:53.132Z [DEBUG] [STARTUP] MCP configs loaded in 26ms
+2026-02-22T14:16:53.132Z [DEBUG] [LSP SERVER MANAGER] getAllLspServers returned 0 server(s)
+2026-02-22T14:16:53.132Z [DEBUG] LSP manager initialized with 0 servers
+2026-02-22T14:16:53.132Z [DEBUG] LSP server manager initialized successfully
+2026-02-22T14:16:53.132Z [DEBUG] LSP notification handlers registered successfully for all 0 server(s)
+2026-02-22T14:16:53.134Z [DEBUG] installed_plugins.json doesn't exist, returning empty V2 object
+2026-02-22T14:16:53.134Z [DEBUG] Initialized versioned plugins system with 0 plugins
+2026-02-22T14:16:53.176Z [DEBUG] [Perfetto] initializePerfettoTracing called, env value: undefined
+2026-02-22T14:16:53.176Z [DEBUG] [3P telemetry] isTelemetryEnabled=false (CLAUDE_CODE_ENABLE_TELEMETRY=undefined)
+2026-02-22T14:16:53.268Z [DEBUG] Getting matching hook commands for SessionStart with query: startup
+2026-02-22T14:16:53.268Z [DEBUG] Found 0 hook matchers in settings
+2026-02-22T14:16:53.268Z [DEBUG] Matched 0 unique hooks for query "startup" (0 before deduplication)
+2026-02-22T14:16:53.269Z [DEBUG] [FileIndex] getProjectFiles called, respectGitignore=true
+2026-02-22T14:16:53.269Z [DEBUG] [FileIndex] getFilesUsingGit called
+2026-02-22T14:16:53.269Z [DEBUG] [FileIndex] not a git repo, returning null
+2026-02-22T14:16:53.269Z [DEBUG] [FileIndex] git ls-files returned null, falling back to ripgrep
+2026-02-22T14:16:53.277Z [DEBUG] installPluginsForHeadless: starting
+2026-02-22T14:16:53.277Z [DEBUG] Found 0 installed plugins (V2 format)
+2026-02-22T14:16:53.277Z [DEBUG] installPluginsForHeadless: no missing plugins or marketplaces configured
+2026-02-22T14:16:53.284Z [DEBUG] Writing to temp file: /home/node/.claude.json.tmp.4024.1771769813284
+2026-02-22T14:16:53.284Z [DEBUG] Preserving file permissions: 100600
+2026-02-22T14:16:53.284Z [DEBUG] Temp file written successfully, size: 282 bytes
+2026-02-22T14:16:53.284Z [DEBUG] Applied original permissions to temp file
+2026-02-22T14:16:53.284Z [DEBUG] Renaming /home/node/.claude.json.tmp.4024.1771769813284 to /home/node/.claude.json
+2026-02-22T14:16:53.285Z [DEBUG] File /home/node/.claude.json written atomically
+2026-02-22T14:16:53.285Z [DEBUG] Total plugin output styles loaded: 0
+2026-02-22T14:16:53.297Z [DEBUG] Ripgrep first use test: PASSED (mode=builtin, path=/usr/lib/node_modules/@anthropic-ai/claude-code/vendor/ripgrep/x64-linux/rg)
+2026-02-22T14:16:53.299Z [DEBUG] Writing to temp file: /home/node/.claude.json.tmp.4024.1771769813299
+2026-02-22T14:16:53.299Z [DEBUG] Preserving file permissions: 100600
+2026-02-22T14:16:53.299Z [DEBUG] Temp file written successfully, size: 282 bytes
+2026-02-22T14:16:53.299Z [DEBUG] Applied original permissions to temp file
+2026-02-22T14:16:53.299Z [DEBUG] Renaming /home/node/.claude.json.tmp.4024.1771769813299 to /home/node/.claude.json
+2026-02-22T14:16:53.299Z [DEBUG] File /home/node/.claude.json written atomically
+2026-02-22T14:16:53.301Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2026-02-22T14:16:53.301Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2026-02-22T14:16:53.301Z [DEBUG] Hooks: Found 0 total hooks in registry
+2026-02-22T14:16:53.301Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2026-02-22T14:16:53.302Z [DEBUG] Sending 1 skills via attachment (initial, 1 total sent)
+2026-02-22T14:16:53.303Z [WARN] [3P telemetry] Event dropped (no event logger initialized): user_prompt
+2026-02-22T14:16:53.303Z [DEBUG] Getting matching hook commands for UserPromptSubmit with query: undefined
+2026-02-22T14:16:53.303Z [DEBUG] Found 0 hook matchers in settings
+2026-02-22T14:16:53.303Z [DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+2026-02-22T14:16:53.306Z [DEBUG] autocompact: tokens=743 threshold=167000 effectiveWindow=180000
+2026-02-22T14:16:53.307Z [DEBUG] Auto tool search disabled: 0 tokens (threshold: 20000, 10% of context) [source: query]
+2026-02-22T14:16:53.319Z [DEBUG] Writing to temp file: /home/node/.claude.json.tmp.4024.1771769813319
+2026-02-22T14:16:53.319Z [DEBUG] Preserving file permissions: 100600
+2026-02-22T14:16:53.319Z [DEBUG] Temp file written successfully, size: 282 bytes
+2026-02-22T14:16:53.319Z [DEBUG] Applied original permissions to temp file
+2026-02-22T14:16:53.319Z [DEBUG] Renaming /home/node/.claude.json.tmp.4024.1771769813319 to /home/node/.claude.json
+2026-02-22T14:16:53.319Z [DEBUG] File /home/node/.claude.json written atomically
+2026-02-22T14:16:53.321Z [DEBUG] attribution header x-anthropic-billing-header: cc_version=2.1.50.b97; cc_entrypoint=sdk-cli; cch=00000;
+2026-02-22T14:16:53.322Z [DEBUG] [API:request] Creating client, ANTHROPIC_CUSTOM_HEADERS present: false, has Authorization header: false
+2026-02-22T14:16:53.322Z [DEBUG] [API:auth] OAuth token check starting
+2026-02-22T14:16:53.322Z [DEBUG] [API:auth] OAuth token check complete
+2026-02-22T14:16:53.343Z [DEBUG] [FileIndex] ripgrep: 107 files in 74ms
+2026-02-22T14:16:53.343Z [DEBUG] [FileIndex] Not in bundled mode, using Fuse.js fallback
+2026-02-22T14:16:53.343Z [DEBUG] [FileIndex] cache refresh completed in 74ms (127 files)
+2026-02-22T14:16:53.368Z [DEBUG] Security messages are fresh (<1h old), skipping fetch
+2026-02-22T14:16:53.761Z [DEBUG] Stream started - received first chunk
+2026-02-22T14:17:03.993Z [DEBUG] executePreToolHooks called for tool: Glob
+2026-02-22T14:17:03.994Z [DEBUG] executePreToolHooks called for tool: Read
+2026-02-22T14:17:03.994Z [DEBUG] Getting matching hook commands for PreToolUse with query: Glob
+2026-02-22T14:17:03.994Z [DEBUG] Found 0 hook matchers in settings
+2026-02-22T14:17:03.994Z [DEBUG] Matched 0 unique hooks for query "Glob" (0 before deduplication)
+2026-02-22T14:17:03.994Z [DEBUG] executePreToolHooks called for tool: Bash
+2026-02-22T14:17:03.994Z [DEBUG] Getting matching hook commands for PreToolUse with query: Read
+2026-02-22T14:17:03.994Z [DEBUG] Found 0 hook matchers in settings
+2026-02-22T14:17:03.994Z [DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+2026-02-22T14:17:03.994Z [DEBUG] Getting matching hook commands for PreToolUse with query: Bash
+2026-02-22T14:17:03.994Z [DEBUG] Found 0 hook matchers in settings
+2026-02-22T14:17:03.994Z [DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+2026-02-22T14:17:04.000Z [DEBUG] tree-sitter: WASM files not found
+2026-02-22T14:17:04.021Z [DEBUG] Getting matching hook commands for PostToolUse with query: Glob
+2026-02-22T14:17:04.021Z [DEBUG] Found 5 hook matchers in settings
+2026-02-22T14:17:04.021Z [DEBUG] Matched 1 unique hooks for query "Glob" (1 before deduplication)
+2026-02-22T14:17:04.023Z [DEBUG] Creating shell snapshot for bash (/bin/bash)
+2026-02-22T14:17:04.023Z [DEBUG] Looking for shell config file: /home/node/.bashrc
+2026-02-22T14:17:04.023Z [DEBUG] Shell config file not found: /home/node/.bashrc, creating snapshot with Claude Code defaults only
+2026-02-22T14:17:04.023Z [DEBUG] Snapshots directory: /home/node/.claude/shell-snapshots
+2026-02-22T14:17:04.024Z [DEBUG] Getting matching hook commands for PostToolUse with query: Read
+2026-02-22T14:17:04.024Z [DEBUG] Found 5 hook matchers in settings
+2026-02-22T14:17:04.024Z [DEBUG] Matched 1 unique hooks for query "Read" (1 before deduplication)
+2026-02-22T14:17:04.025Z [DEBUG] Creating snapshot at: /home/node/.claude/shell-snapshots/snapshot-bash-1771769824023-psor31.sh
+2026-02-22T14:17:04.025Z [DEBUG] Execution timeout: 10000ms
+2026-02-22T14:17:04.031Z [DEBUG] Shell snapshot created successfully (435 bytes)
+2026-02-22T14:17:04.032Z [DEBUG] No session environment scripts found
+2026-02-22T14:17:04.044Z [DEBUG] Tool search disabled for model 'claude-haiku-4-5-20251001': model does not support tool_reference blocks. This feature is only available on Claude Sonnet 4+, Opus 4+, and newer models.
+2026-02-22T14:17:04.044Z [DEBUG] attribution header x-anthropic-billing-header: cc_version=2.1.50.f25; cc_entrypoint=sdk-cli; cch=00000;
+2026-02-22T14:17:04.044Z [DEBUG] [API:request] Creating client, ANTHROPIC_CUSTOM_HEADERS present: false, has Authorization header: false
+2026-02-22T14:17:04.044Z [DEBUG] [API:auth] OAuth token check starting
+2026-02-22T14:17:04.044Z [DEBUG] Getting matching hook commands for PostToolUse with query: Bash
+2026-02-22T14:17:04.044Z [DEBUG] Found 5 hook matchers in settings
+2026-02-22T14:17:04.044Z [DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+2026-02-22T14:17:04.044Z [DEBUG] [API:auth] OAuth token check complete
+2026-02-22T14:17:04.047Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2026-02-22T14:17:04.047Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2026-02-22T14:17:04.047Z [DEBUG] Hooks: Found 0 total hooks in registry
+2026-02-22T14:17:04.047Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2026-02-22T14:17:04.047Z [DEBUG] autocompact: tokens=19628 threshold=167000 effectiveWindow=180000
+2026-02-22T14:17:04.048Z [DEBUG] Auto tool search disabled: 0 tokens (threshold: 20000, 10% of context) [source: query]
+2026-02-22T14:17:04.050Z [DEBUG] Writing to temp file: /home/node/.claude.json.tmp.4024.1771769824050
+2026-02-22T14:17:04.050Z [DEBUG] Preserving file permissions: 100600
+2026-02-22T14:17:04.050Z [DEBUG] Temp file written successfully, size: 282 bytes
+2026-02-22T14:17:04.050Z [DEBUG] Applied original permissions to temp file
+2026-02-22T14:17:04.050Z [DEBUG] Renaming /home/node/.claude.json.tmp.4024.1771769824050 to /home/node/.claude.json
+2026-02-22T14:17:04.050Z [DEBUG] File /home/node/.claude.json written atomically
+2026-02-22T14:17:04.051Z [DEBUG] attribution header x-anthropic-billing-header: cc_version=2.1.50.b97; cc_entrypoint=sdk-cli; cch=00000;
+2026-02-22T14:17:04.051Z [DEBUG] [API:request] Creating client, ANTHROPIC_CUSTOM_HEADERS present: false, has Authorization header: false
+2026-02-22T14:17:04.051Z [DEBUG] [API:auth] OAuth token check starting
+2026-02-22T14:17:04.051Z [DEBUG] [API:auth] OAuth token check complete
+2026-02-22T14:17:04.464Z [DEBUG] Stream started - received first chunk
+2026-02-22T14:17:04.601Z [DEBUG] Stream started - received first chunk
+2026-02-22T14:17:12.740Z [DEBUG] executePreToolHooks called for tool: Read
+2026-02-22T14:17:12.740Z [DEBUG] executePreToolHooks called for tool: Read
+2026-02-22T14:17:12.740Z [DEBUG] Getting matching hook commands for PreToolUse with query: Read
+2026-02-22T14:17:12.740Z [DEBUG] Found 0 hook matchers in settings
+2026-02-22T14:17:12.740Z [DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+2026-02-22T14:17:12.740Z [DEBUG] Getting matching hook commands for PreToolUse with query: Read
+2026-02-22T14:17:12.740Z [DEBUG] Found 0 hook matchers in settings
+2026-02-22T14:17:12.740Z [DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+2026-02-22T14:17:12.744Z [DEBUG] Getting matching hook commands for PostToolUse with query: Read
+2026-02-22T14:17:12.744Z [DEBUG] Found 5 hook matchers in settings
+2026-02-22T14:17:12.744Z [DEBUG] Matched 1 unique hooks for query "Read" (1 before deduplication)
+2026-02-22T14:17:12.746Z [DEBUG] Getting matching hook commands for PostToolUse with query: Read
+2026-02-22T14:17:12.746Z [DEBUG] Found 5 hook matchers in settings
+2026-02-22T14:17:12.746Z [DEBUG] Matched 1 unique hooks for query "Read" (1 before deduplication)
+2026-02-22T14:17:12.746Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2026-02-22T14:17:12.746Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2026-02-22T14:17:12.746Z [DEBUG] Hooks: Found 0 total hooks in registry
+2026-02-22T14:17:12.746Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2026-02-22T14:17:12.747Z [DEBUG] autocompact: tokens=25643 threshold=167000 effectiveWindow=180000
+2026-02-22T14:17:12.747Z [DEBUG] Auto tool search disabled: 0 tokens (threshold: 20000, 10% of context) [source: query]
+2026-02-22T14:17:12.750Z [DEBUG] Writing to temp file: /home/node/.claude.json.tmp.4024.1771769832750
+2026-02-22T14:17:12.750Z [DEBUG] Preserving file permissions: 100600
+2026-02-22T14:17:12.750Z [DEBUG] Temp file written successfully, size: 282 bytes
+2026-02-22T14:17:12.750Z [DEBUG] Applied original permissions to temp file
+2026-02-22T14:17:12.750Z [DEBUG] Renaming /home/node/.claude.json.tmp.4024.1771769832750 to /home/node/.claude.json
+2026-02-22T14:17:12.750Z [DEBUG] File /home/node/.claude.json written atomically
+2026-02-22T14:17:12.750Z [DEBUG] attribution header x-anthropic-billing-header: cc_version=2.1.50.b97; cc_entrypoint=sdk-cli; cch=00000;
+2026-02-22T14:17:12.751Z [DEBUG] [API:request] Creating client, ANTHROPIC_CUSTOM_HEADERS present: false, has Authorization header: false
+2026-02-22T14:17:12.751Z [DEBUG] [API:auth] OAuth token check starting
+2026-02-22T14:17:12.751Z [DEBUG] [API:auth] OAuth token check complete
+2026-02-22T14:17:13.109Z [DEBUG] Stream started - received first chunk
+2026-02-22T14:17:26.797Z [DEBUG] executePreToolHooks called for tool: Bash
+2026-02-22T14:17:26.797Z [DEBUG] Getting matching hook commands for PreToolUse with query: Bash
+2026-02-22T14:17:26.797Z [DEBUG] Found 0 hook matchers in settings
+2026-02-22T14:17:26.797Z [DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+2026-02-22T14:17:26.814Z [DEBUG] Tool search disabled for model 'claude-haiku-4-5-20251001': model does not support tool_reference blocks. This feature is only available on Claude Sonnet 4+, Opus 4+, and newer models.
+2026-02-22T14:17:26.814Z [DEBUG] attribution header x-anthropic-billing-header: cc_version=2.1.50.5a7; cc_entrypoint=sdk-cli; cch=00000;
+2026-02-22T14:17:26.814Z [DEBUG] [API:request] Creating client, ANTHROPIC_CUSTOM_HEADERS present: false, has Authorization header: false
+2026-02-22T14:17:26.814Z [DEBUG] [API:auth] OAuth token check starting
+2026-02-22T14:17:26.815Z [DEBUG] Getting matching hook commands for PostToolUse with query: Bash
+2026-02-22T14:17:26.815Z [DEBUG] Found 5 hook matchers in settings
+2026-02-22T14:17:26.815Z [DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+2026-02-22T14:17:26.815Z [DEBUG] [API:auth] OAuth token check complete
+2026-02-22T14:17:26.817Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2026-02-22T14:17:26.817Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2026-02-22T14:17:26.817Z [DEBUG] Hooks: Found 0 total hooks in registry
+2026-02-22T14:17:26.817Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2026-02-22T14:17:26.817Z [DEBUG] autocompact: tokens=28591 threshold=167000 effectiveWindow=180000
+2026-02-22T14:17:26.818Z [DEBUG] Auto tool search disabled: 0 tokens (threshold: 20000, 10% of context) [source: query]
+2026-02-22T14:17:26.821Z [DEBUG] Writing to temp file: /home/node/.claude.json.tmp.4024.1771769846821
+2026-02-22T14:17:26.821Z [DEBUG] Preserving file permissions: 100600
+2026-02-22T14:17:26.821Z [DEBUG] Temp file written successfully, size: 282 bytes
+2026-02-22T14:17:26.821Z [DEBUG] Applied original permissions to temp file
+2026-02-22T14:17:26.821Z [DEBUG] Renaming /home/node/.claude.json.tmp.4024.1771769846821 to /home/node/.claude.json
+2026-02-22T14:17:26.821Z [DEBUG] File /home/node/.claude.json written atomically
+2026-02-22T14:17:26.822Z [DEBUG] attribution header x-anthropic-billing-header: cc_version=2.1.50.b97; cc_entrypoint=sdk-cli; cch=00000;
+2026-02-22T14:17:26.822Z [DEBUG] [API:request] Creating client, ANTHROPIC_CUSTOM_HEADERS present: false, has Authorization header: false
+2026-02-22T14:17:26.822Z [DEBUG] [API:auth] OAuth token check starting
+2026-02-22T14:17:26.822Z [DEBUG] [API:auth] OAuth token check complete
+2026-02-22T14:17:27.273Z [DEBUG] Stream started - received first chunk
+2026-02-22T14:17:28.093Z [DEBUG] Stream started - received first chunk
+2026-02-22T14:17:37.038Z [DEBUG] executePreToolHooks called for tool: TodoWrite
+2026-02-22T14:17:37.038Z [DEBUG] Getting matching hook commands for PreToolUse with query: TodoWrite
+2026-02-22T14:17:37.038Z [DEBUG] Found 0 hook matchers in settings
+2026-02-22T14:17:37.038Z [DEBUG] Matched 0 unique hooks for query "TodoWrite" (0 before deduplication)
+2026-02-22T14:17:37.038Z [DEBUG] Getting matching hook commands for PostToolUse with query: TodoWrite
+2026-02-22T14:17:37.038Z [DEBUG] Found 5 hook matchers in settings
+2026-02-22T14:17:37.038Z [DEBUG] Matched 0 unique hooks for query "TodoWrite" (0 before deduplication)
+2026-02-22T14:17:37.039Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2026-02-22T14:17:37.039Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2026-02-22T14:17:37.039Z [DEBUG] Hooks: Found 0 total hooks in registry
+2026-02-22T14:17:37.039Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2026-02-22T14:17:37.040Z [DEBUG] autocompact: tokens=28793 threshold=167000 effectiveWindow=180000
+2026-02-22T14:17:37.040Z [DEBUG] Auto tool search disabled: 0 tokens (threshold: 20000, 10% of context) [source: query]
+2026-02-22T14:17:37.042Z [DEBUG] Writing to temp file: /home/node/.claude.json.tmp.4024.1771769857042
+2026-02-22T14:17:37.042Z [DEBUG] Preserving file permissions: 100600
+2026-02-22T14:17:37.042Z [DEBUG] Temp file written successfully, size: 282 bytes
+2026-02-22T14:17:37.042Z [DEBUG] Applied original permissions to temp file
+2026-02-22T14:17:37.042Z [DEBUG] Renaming /home/node/.claude.json.tmp.4024.1771769857042 to /home/node/.claude.json
+2026-02-22T14:17:37.042Z [DEBUG] File /home/node/.claude.json written atomically
+2026-02-22T14:17:37.043Z [DEBUG] attribution header x-anthropic-billing-header: cc_version=2.1.50.b97; cc_entrypoint=sdk-cli; cch=00000;
+2026-02-22T14:17:37.043Z [DEBUG] [API:request] Creating client, ANTHROPIC_CUSTOM_HEADERS present: false, has Authorization header: false
+2026-02-22T14:17:37.043Z [DEBUG] [API:auth] OAuth token check starting
+2026-02-22T14:17:37.043Z [DEBUG] [API:auth] OAuth token check complete
+2026-02-22T14:17:37.433Z [DEBUG] Stream started - received first chunk
+2026-02-22T14:17:52.369Z [DEBUG] executePreToolHooks called for tool: Edit
+2026-02-22T14:17:52.369Z [DEBUG] Getting matching hook commands for PreToolUse with query: Edit
+2026-02-22T14:17:52.369Z [DEBUG] Found 0 hook matchers in settings
+2026-02-22T14:17:52.369Z [DEBUG] Matched 0 unique hooks for query "Edit" (0 before deduplication)
+2026-02-22T14:17:52.373Z [DEBUG] Writing to temp file: /app/volumes/workspace/AGENT_MISSION.md.tmp.4024.1771769872373
+2026-02-22T14:17:52.373Z [DEBUG] Preserving file permissions: 100644
+2026-02-22T14:17:52.373Z [DEBUG] Temp file written successfully, size: 4405 bytes
+2026-02-22T14:17:52.373Z [DEBUG] Applied original permissions to temp file
+2026-02-22T14:17:52.373Z [DEBUG] Renaming /app/volumes/workspace/AGENT_MISSION.md.tmp.4024.1771769872373 to /app/volumes/workspace/AGENT_MISSION.md
+2026-02-22T14:17:52.373Z [DEBUG] File /app/volumes/workspace/AGENT_MISSION.md written atomically
+2026-02-22T14:17:52.374Z [DEBUG] Getting matching hook commands for PostToolUse with query: Edit
+2026-02-22T14:17:52.374Z [DEBUG] Found 5 hook matchers in settings
+2026-02-22T14:17:52.374Z [DEBUG] Matched 1 unique hooks for query "Edit" (1 before deduplication)
+2026-02-22T14:17:52.375Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2026-02-22T14:17:52.375Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2026-02-22T14:17:52.375Z [DEBUG] Hooks: Found 0 total hooks in registry
+2026-02-22T14:17:52.375Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2026-02-22T14:17:52.376Z [DEBUG] autocompact: tokens=29174 threshold=167000 effectiveWindow=180000
+2026-02-22T14:17:52.376Z [DEBUG] Auto tool search disabled: 0 tokens (threshold: 20000, 10% of context) [source: query]
+2026-02-22T14:17:52.378Z [DEBUG] Writing to temp file: /home/node/.claude.json.tmp.4024.1771769872378
+2026-02-22T14:17:52.378Z [DEBUG] Preserving file permissions: 100600
+2026-02-22T14:17:52.379Z [DEBUG] Temp file written successfully, size: 282 bytes
+2026-02-22T14:17:52.379Z [DEBUG] Applied original permissions to temp file
+2026-02-22T14:17:52.379Z [DEBUG] Renaming /home/node/.claude.json.tmp.4024.1771769872378 to /home/node/.claude.json
+2026-02-22T14:17:52.379Z [DEBUG] File /home/node/.claude.json written atomically
+2026-02-22T14:17:52.379Z [DEBUG] attribution header x-anthropic-billing-header: cc_version=2.1.50.b97; cc_entrypoint=sdk-cli; cch=00000;
+2026-02-22T14:17:52.380Z [DEBUG] [API:request] Creating client, ANTHROPIC_CUSTOM_HEADERS present: false, has Authorization header: false
+2026-02-22T14:17:52.380Z [DEBUG] [API:auth] OAuth token check starting
+2026-02-22T14:17:52.380Z [DEBUG] [API:auth] OAuth token check complete
+2026-02-22T14:17:52.869Z [DEBUG] Stream started - received first chunk
+2026-02-22T14:18:08.653Z [DEBUG] executePreToolHooks called for tool: Edit
+2026-02-22T14:18:08.653Z [DEBUG] Getting matching hook commands for PreToolUse with query: Edit
+2026-02-22T14:18:08.653Z [DEBUG] Found 0 hook matchers in settings
+2026-02-22T14:18:08.653Z [DEBUG] Matched 0 unique hooks for query "Edit" (0 before deduplication)
+2026-02-22T14:18:08.655Z [DEBUG] Writing to temp file: /app/volumes/workspace/AGENT_MISSION.md.tmp.4024.1771769888655
+2026-02-22T14:18:08.655Z [DEBUG] Preserving file permissions: 100644
+2026-02-22T14:18:08.655Z [DEBUG] Temp file written successfully, size: 4701 bytes
+2026-02-22T14:18:08.655Z [DEBUG] Applied original permissions to temp file
+2026-02-22T14:18:08.655Z [DEBUG] Renaming /app/volumes/workspace/AGENT_MISSION.md.tmp.4024.1771769888655 to /app/volumes/workspace/AGENT_MISSION.md
+2026-02-22T14:18:08.655Z [DEBUG] File /app/volumes/workspace/AGENT_MISSION.md written atomically
+2026-02-22T14:18:08.656Z [DEBUG] Getting matching hook commands for PostToolUse with query: Edit
+2026-02-22T14:18:08.656Z [DEBUG] Found 5 hook matchers in settings
+2026-02-22T14:18:08.656Z [DEBUG] Matched 1 unique hooks for query "Edit" (1 before deduplication)
+2026-02-22T14:18:08.656Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2026-02-22T14:18:08.656Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2026-02-22T14:18:08.656Z [DEBUG] Hooks: Found 0 total hooks in registry
+2026-02-22T14:18:08.656Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2026-02-22T14:18:08.657Z [DEBUG] autocompact: tokens=29590 threshold=167000 effectiveWindow=180000
+2026-02-22T14:18:08.657Z [DEBUG] Auto tool search disabled: 0 tokens (threshold: 20000, 10% of context) [source: query]
+2026-02-22T14:18:08.660Z [DEBUG] Writing to temp file: /home/node/.claude.json.tmp.4024.1771769888660
+2026-02-22T14:18:08.660Z [DEBUG] Preserving file permissions: 100600
+2026-02-22T14:18:08.660Z [DEBUG] Temp file written successfully, size: 282 bytes
+2026-02-22T14:18:08.660Z [DEBUG] Applied original permissions to temp file
+2026-02-22T14:18:08.660Z [DEBUG] Renaming /home/node/.claude.json.tmp.4024.1771769888660 to /home/node/.claude.json
+2026-02-22T14:18:08.660Z [DEBUG] File /home/node/.claude.json written atomically
+2026-02-22T14:18:08.660Z [DEBUG] attribution header x-anthropic-billing-header: cc_version=2.1.50.b97; cc_entrypoint=sdk-cli; cch=00000;
+2026-02-22T14:18:08.660Z [DEBUG] [API:request] Creating client, ANTHROPIC_CUSTOM_HEADERS present: false, has Authorization header: false
+2026-02-22T14:18:08.660Z [DEBUG] [API:auth] OAuth token check starting
+2026-02-22T14:18:08.661Z [DEBUG] [API:auth] OAuth token check complete
+2026-02-22T14:18:09.028Z [DEBUG] Stream started - received first chunk
+2026-02-22T14:18:17.498Z [DEBUG] executePreToolHooks called for tool: Edit
+2026-02-22T14:18:17.498Z [DEBUG] Getting matching hook commands for PreToolUse with query: Edit
+2026-02-22T14:18:17.498Z [DEBUG] Found 0 hook matchers in settings
+2026-02-22T14:18:17.498Z [DEBUG] Matched 0 unique hooks for query "Edit" (0 before deduplication)
+2026-02-22T14:18:17.500Z [DEBUG] Writing to temp file: /app/volumes/workspace/AGENT_MISSION.md.tmp.4024.1771769897500
+2026-02-22T14:18:17.500Z [DEBUG] Preserving file permissions: 100644
+2026-02-22T14:18:17.500Z [DEBUG] Temp file written successfully, size: 4781 bytes
+2026-02-22T14:18:17.500Z [DEBUG] Applied original permissions to temp file
+2026-02-22T14:18:17.500Z [DEBUG] Renaming /app/volumes/workspace/AGENT_MISSION.md.tmp.4024.1771769897500 to /app/volumes/workspace/AGENT_MISSION.md
+2026-02-22T14:18:17.500Z [DEBUG] File /app/volumes/workspace/AGENT_MISSION.md written atomically
+2026-02-22T14:18:17.500Z [DEBUG] Getting matching hook commands for PostToolUse with query: Edit
+2026-02-22T14:18:17.500Z [DEBUG] Found 5 hook matchers in settings
+2026-02-22T14:18:17.500Z [DEBUG] Matched 1 unique hooks for query "Edit" (1 before deduplication)
+2026-02-22T14:18:17.501Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2026-02-22T14:18:17.501Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2026-02-22T14:18:17.501Z [DEBUG] Hooks: Found 0 total hooks in registry
+2026-02-22T14:18:17.501Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2026-02-22T14:18:17.501Z [DEBUG] autocompact: tokens=29758 threshold=167000 effectiveWindow=180000
+2026-02-22T14:18:17.502Z [DEBUG] Auto tool search disabled: 0 tokens (threshold: 20000, 10% of context) [source: query]
+2026-02-22T14:18:17.504Z [DEBUG] Writing to temp file: /home/node/.claude.json.tmp.4024.1771769897504
+2026-02-22T14:18:17.504Z [DEBUG] Preserving file permissions: 100600
+2026-02-22T14:18:17.504Z [DEBUG] Temp file written successfully, size: 282 bytes
+2026-02-22T14:18:17.504Z [DEBUG] Applied original permissions to temp file
+2026-02-22T14:18:17.504Z [DEBUG] Renaming /home/node/.claude.json.tmp.4024.1771769897504 to /home/node/.claude.json
+2026-02-22T14:18:17.504Z [DEBUG] File /home/node/.claude.json written atomically
+2026-02-22T14:18:17.505Z [DEBUG] attribution header x-anthropic-billing-header: cc_version=2.1.50.b97; cc_entrypoint=sdk-cli; cch=00000;
+2026-02-22T14:18:17.505Z [DEBUG] [API:request] Creating client, ANTHROPIC_CUSTOM_HEADERS present: false, has Authorization header: false
+2026-02-22T14:18:17.505Z [DEBUG] [API:auth] OAuth token check starting
+2026-02-22T14:18:17.505Z [DEBUG] [API:auth] OAuth token check complete
+2026-02-22T14:18:17.900Z [DEBUG] Stream started - received first chunk
+2026-02-22T14:18:24.831Z [DEBUG] executePreToolHooks called for tool: Bash
+2026-02-22T14:18:24.831Z [DEBUG] Getting matching hook commands for PreToolUse with query: Bash
+2026-02-22T14:18:24.831Z [DEBUG] Found 0 hook matchers in settings
+2026-02-22T14:18:24.831Z [DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+2026-02-22T14:18:24.886Z [DEBUG] Tool search disabled for model 'claude-haiku-4-5-20251001': model does not support tool_reference blocks. This feature is only available on Claude Sonnet 4+, Opus 4+, and newer models.
+2026-02-22T14:18:24.886Z [DEBUG] attribution header x-anthropic-billing-header: cc_version=2.1.50.c46; cc_entrypoint=sdk-cli; cch=00000;
+2026-02-22T14:18:24.886Z [DEBUG] [API:request] Creating client, ANTHROPIC_CUSTOM_HEADERS present: false, has Authorization header: false
+2026-02-22T14:18:24.886Z [DEBUG] [API:auth] OAuth token check starting
+2026-02-22T14:18:24.887Z [DEBUG] Getting matching hook commands for PostToolUse with query: Bash
+2026-02-22T14:18:24.887Z [DEBUG] Found 5 hook matchers in settings
+2026-02-22T14:18:24.887Z [DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+2026-02-22T14:18:24.887Z [DEBUG] [API:auth] OAuth token check complete
+2026-02-22T14:18:24.889Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2026-02-22T14:18:24.889Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2026-02-22T14:18:24.889Z [DEBUG] Hooks: Found 0 total hooks in registry
+2026-02-22T14:18:24.889Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2026-02-22T14:18:24.889Z [DEBUG] autocompact: tokens=29949 threshold=167000 effectiveWindow=180000
+2026-02-22T14:18:24.889Z [DEBUG] Auto tool search disabled: 0 tokens (threshold: 20000, 10% of context) [source: query]
+2026-02-22T14:18:24.892Z [DEBUG] Writing to temp file: /home/node/.claude.json.tmp.4024.1771769904892
+2026-02-22T14:18:24.892Z [DEBUG] Preserving file permissions: 100600
+2026-02-22T14:18:24.892Z [DEBUG] Temp file written successfully, size: 282 bytes
+2026-02-22T14:18:24.892Z [DEBUG] Applied original permissions to temp file
+2026-02-22T14:18:24.892Z [DEBUG] Renaming /home/node/.claude.json.tmp.4024.1771769904892 to /home/node/.claude.json
+2026-02-22T14:18:24.892Z [DEBUG] File /home/node/.claude.json written atomically
+2026-02-22T14:18:24.893Z [DEBUG] attribution header x-anthropic-billing-header: cc_version=2.1.50.b97; cc_entrypoint=sdk-cli; cch=00000;
+2026-02-22T14:18:24.893Z [DEBUG] [API:request] Creating client, ANTHROPIC_CUSTOM_HEADERS present: false, has Authorization header: false
+2026-02-22T14:18:24.893Z [DEBUG] [API:auth] OAuth token check starting
+2026-02-22T14:18:24.893Z [DEBUG] [API:auth] OAuth token check complete
+2026-02-22T14:18:25.164Z [DEBUG] Stream started - received first chunk
+2026-02-22T14:18:25.619Z [DEBUG] Stream started - received first chunk
+2026-02-22T14:18:34.263Z [DEBUG] executePreToolHooks called for tool: Edit
+2026-02-22T14:18:34.263Z [DEBUG] Getting matching hook commands for PreToolUse with query: Edit
+2026-02-22T14:18:34.263Z [DEBUG] Found 0 hook matchers in settings
+2026-02-22T14:18:34.263Z [DEBUG] Matched 0 unique hooks for query "Edit" (0 before deduplication)
+2026-02-22T14:18:34.265Z [DEBUG] Writing to temp file: /app/volumes/workspace/AGENT_MISSION.md.tmp.4024.1771769914265
+2026-02-22T14:18:34.265Z [DEBUG] Preserving file permissions: 100644
+2026-02-22T14:18:34.265Z [DEBUG] Temp file written successfully, size: 4819 bytes
+2026-02-22T14:18:34.265Z [DEBUG] Applied original permissions to temp file
+2026-02-22T14:18:34.265Z [DEBUG] Renaming /app/volumes/workspace/AGENT_MISSION.md.tmp.4024.1771769914265 to /app/volumes/workspace/AGENT_MISSION.md
+2026-02-22T14:18:34.265Z [DEBUG] File /app/volumes/workspace/AGENT_MISSION.md written atomically
+2026-02-22T14:18:34.265Z [DEBUG] Getting matching hook commands for PostToolUse with query: Edit
+2026-02-22T14:18:34.265Z [DEBUG] Found 5 hook matchers in settings
+2026-02-22T14:18:34.265Z [DEBUG] Matched 1 unique hooks for query "Edit" (1 before deduplication)
+2026-02-22T14:18:34.266Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2026-02-22T14:18:34.266Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2026-02-22T14:18:34.266Z [DEBUG] Hooks: Found 0 total hooks in registry
+2026-02-22T14:18:34.266Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2026-02-22T14:18:34.266Z [DEBUG] autocompact: tokens=30124 threshold=167000 effectiveWindow=180000
+2026-02-22T14:18:34.267Z [DEBUG] Auto tool search disabled: 0 tokens (threshold: 20000, 10% of context) [source: query]
+2026-02-22T14:18:34.269Z [DEBUG] Writing to temp file: /home/node/.claude.json.tmp.4024.1771769914269
+2026-02-22T14:18:34.269Z [DEBUG] Preserving file permissions: 100600
+2026-02-22T14:18:34.269Z [DEBUG] Temp file written successfully, size: 282 bytes
+2026-02-22T14:18:34.269Z [DEBUG] Applied original permissions to temp file
+2026-02-22T14:18:34.269Z [DEBUG] Renaming /home/node/.claude.json.tmp.4024.1771769914269 to /home/node/.claude.json
+2026-02-22T14:18:34.269Z [DEBUG] File /home/node/.claude.json written atomically
+2026-02-22T14:18:34.270Z [DEBUG] attribution header x-anthropic-billing-header: cc_version=2.1.50.b97; cc_entrypoint=sdk-cli; cch=00000;
+2026-02-22T14:18:34.270Z [DEBUG] [API:request] Creating client, ANTHROPIC_CUSTOM_HEADERS present: false, has Authorization header: false
+2026-02-22T14:18:34.270Z [DEBUG] [API:auth] OAuth token check starting
+2026-02-22T14:18:34.270Z [DEBUG] [API:auth] OAuth token check complete
+2026-02-22T14:18:34.715Z [DEBUG] Stream started - received first chunk
+2026-02-22T14:18:40.535Z [DEBUG] executePreToolHooks called for tool: TodoWrite
+2026-02-22T14:18:40.535Z [DEBUG] Getting matching hook commands for PreToolUse with query: TodoWrite
+2026-02-22T14:18:40.535Z [DEBUG] Found 0 hook matchers in settings
+2026-02-22T14:18:40.535Z [DEBUG] Matched 0 unique hooks for query "TodoWrite" (0 before deduplication)
+2026-02-22T14:18:40.536Z [DEBUG] Getting matching hook commands for PostToolUse with query: TodoWrite
+2026-02-22T14:18:40.536Z [DEBUG] Found 5 hook matchers in settings
+2026-02-22T14:18:40.536Z [DEBUG] Matched 0 unique hooks for query "TodoWrite" (0 before deduplication)
+2026-02-22T14:18:40.536Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2026-02-22T14:18:40.536Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2026-02-22T14:18:40.536Z [DEBUG] Hooks: Found 0 total hooks in registry
+2026-02-22T14:18:40.536Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2026-02-22T14:18:40.537Z [DEBUG] autocompact: tokens=30253 threshold=167000 effectiveWindow=180000
+2026-02-22T14:18:40.537Z [DEBUG] Auto tool search disabled: 0 tokens (threshold: 20000, 10% of context) [source: query]
+2026-02-22T14:18:40.540Z [DEBUG] Writing to temp file: /home/node/.claude.json.tmp.4024.1771769920540
+2026-02-22T14:18:40.540Z [DEBUG] Preserving file permissions: 100600
+2026-02-22T14:18:40.540Z [DEBUG] Temp file written successfully, size: 282 bytes
+2026-02-22T14:18:40.540Z [DEBUG] Applied original permissions to temp file
+2026-02-22T14:18:40.540Z [DEBUG] Renaming /home/node/.claude.json.tmp.4024.1771769920540 to /home/node/.claude.json
+2026-02-22T14:18:40.540Z [DEBUG] File /home/node/.claude.json written atomically
+2026-02-22T14:18:40.541Z [DEBUG] attribution header x-anthropic-billing-header: cc_version=2.1.50.b97; cc_entrypoint=sdk-cli; cch=00000;
+2026-02-22T14:18:40.541Z [DEBUG] [API:request] Creating client, ANTHROPIC_CUSTOM_HEADERS present: false, has Authorization header: false
+2026-02-22T14:18:40.541Z [DEBUG] [API:auth] OAuth token check starting
+2026-02-22T14:18:40.541Z [DEBUG] [API:auth] OAuth token check complete
+2026-02-22T14:18:40.947Z [DEBUG] Stream started - received first chunk
+2026-02-22T14:19:34.614Z [WARN] Streaming stall detected: 50.2s gap between events (stall #1)
+2026-02-22T14:19:34.875Z [WARN] Streaming completed with 1 stall(s), total stall time: 50.2s
+2026-02-22T14:19:34.876Z [DEBUG] executePreToolHooks called for tool: Write
+2026-02-22T14:19:34.876Z [DEBUG] Getting matching hook commands for PreToolUse with query: Write
+2026-02-22T14:19:34.876Z [DEBUG] Found 0 hook matchers in settings
+2026-02-22T14:19:34.876Z [DEBUG] Matched 0 unique hooks for query "Write" (0 before deduplication)
+2026-02-22T14:19:34.889Z [DEBUG] Writing to temp file: /app/volumes/reports/pending/detailed-report-task-0e89fa08.md.tmp.4024.1771769974889
+2026-02-22T14:19:34.890Z [DEBUG] Temp file written successfully, size: 2844 bytes
+2026-02-22T14:19:34.890Z [DEBUG] Renaming /app/volumes/reports/pending/detailed-report-task-0e89fa08.md.tmp.4024.1771769974889 to /app/volumes/reports/pending/detailed-report-task-0e89fa08.md
+2026-02-22T14:19:34.890Z [DEBUG] File /app/volumes/reports/pending/detailed-report-task-0e89fa08.md written atomically
+2026-02-22T14:19:34.891Z [DEBUG] Getting matching hook commands for PostToolUse with query: Write
+2026-02-22T14:19:34.891Z [DEBUG] Found 5 hook matchers in settings
+2026-02-22T14:19:34.891Z [DEBUG] Matched 1 unique hooks for query "Write" (1 before deduplication)
+2026-02-22T14:19:34.892Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2026-02-22T14:19:34.892Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2026-02-22T14:19:34.892Z [DEBUG] Hooks: Found 0 total hooks in registry
+2026-02-22T14:19:34.892Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2026-02-22T14:19:34.892Z [DEBUG] autocompact: tokens=31539 threshold=167000 effectiveWindow=180000
+2026-02-22T14:19:34.892Z [DEBUG] Auto tool search disabled: 0 tokens (threshold: 20000, 10% of context) [source: query]
+2026-02-22T14:19:34.895Z [DEBUG] Writing to temp file: /home/node/.claude.json.tmp.4024.1771769974895
+2026-02-22T14:19:34.895Z [DEBUG] Preserving file permissions: 100600
+2026-02-22T14:19:34.895Z [DEBUG] Temp file written successfully, size: 282 bytes
+2026-02-22T14:19:34.895Z [DEBUG] Applied original permissions to temp file
+2026-02-22T14:19:34.895Z [DEBUG] Renaming /home/node/.claude.json.tmp.4024.1771769974895 to /home/node/.claude.json
+2026-02-22T14:19:34.895Z [DEBUG] File /home/node/.claude.json written atomically
+2026-02-22T14:19:34.896Z [DEBUG] attribution header x-anthropic-billing-header: cc_version=2.1.50.b97; cc_entrypoint=sdk-cli; cch=00000;
+2026-02-22T14:19:34.896Z [DEBUG] [API:request] Creating client, ANTHROPIC_CUSTOM_HEADERS present: false, has Authorization header: false
+2026-02-22T14:19:34.896Z [DEBUG] [API:auth] OAuth token check starting
+2026-02-22T14:19:34.896Z [DEBUG] [API:auth] OAuth token check complete
+2026-02-22T14:19:35.287Z [DEBUG] Stream started - received first chunk
+2026-02-22T14:19:40.476Z [DEBUG] executePreToolHooks called for tool: TodoWrite
+2026-02-22T14:19:40.476Z [DEBUG] Getting matching hook commands for PreToolUse with query: TodoWrite
+2026-02-22T14:19:40.476Z [DEBUG] Found 0 hook matchers in settings
+2026-02-22T14:19:40.476Z [DEBUG] Matched 0 unique hooks for query "TodoWrite" (0 before deduplication)
+2026-02-22T14:19:40.477Z [DEBUG] Getting matching hook commands for PostToolUse with query: TodoWrite
+2026-02-22T14:19:40.477Z [DEBUG] Found 5 hook matchers in settings
+2026-02-22T14:19:40.477Z [DEBUG] Matched 0 unique hooks for query "TodoWrite" (0 before deduplication)
+2026-02-22T14:19:40.477Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2026-02-22T14:19:40.477Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2026-02-22T14:19:40.477Z [DEBUG] Hooks: Found 0 total hooks in registry
+2026-02-22T14:19:40.477Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2026-02-22T14:19:40.478Z [DEBUG] autocompact: tokens=31671 threshold=167000 effectiveWindow=180000
+2026-02-22T14:19:40.478Z [DEBUG] Auto tool search disabled: 0 tokens (threshold: 20000, 10% of context) [source: query]
+2026-02-22T14:19:40.481Z [DEBUG] Writing to temp file: /home/node/.claude.json.tmp.4024.1771769980481
+2026-02-22T14:19:40.481Z [DEBUG] Preserving file permissions: 100600
+2026-02-22T14:19:40.481Z [DEBUG] Temp file written successfully, size: 282 bytes
+2026-02-22T14:19:40.481Z [DEBUG] Applied original permissions to temp file
+2026-02-22T14:19:40.481Z [DEBUG] Renaming /home/node/.claude.json.tmp.4024.1771769980481 to /home/node/.claude.json
+2026-02-22T14:19:40.481Z [DEBUG] File /home/node/.claude.json written atomically
+2026-02-22T14:19:40.481Z [DEBUG] attribution header x-anthropic-billing-header: cc_version=2.1.50.b97; cc_entrypoint=sdk-cli; cch=00000;
+2026-02-22T14:19:40.482Z [DEBUG] [API:request] Creating client, ANTHROPIC_CUSTOM_HEADERS present: false, has Authorization header: false
+2026-02-22T14:19:40.482Z [DEBUG] [API:auth] OAuth token check starting
+2026-02-22T14:19:40.482Z [DEBUG] [API:auth] OAuth token check complete
+2026-02-22T14:19:40.832Z [DEBUG] Stream started - received first chunk
+2026-02-22T14:19:50.783Z [DEBUG] Getting matching hook commands for Stop with query: undefined
+2026-02-22T14:19:50.783Z [DEBUG] Found 0 hook matchers in settings
+2026-02-22T14:19:50.783Z [DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)

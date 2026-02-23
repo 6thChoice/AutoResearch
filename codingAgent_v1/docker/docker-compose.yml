@@ -1,0 +1,71 @@
+services:
+  claude-code:
+    build:
+      context: ..
+      dockerfile: docker/Dockerfile
+    container_name: claude-code-agent
+    restart: unless-stopped
+
+    # 使用 host 网络模式，可以直接访问宿主机的 127.0.0.1:7890 代理
+    network_mode: host
+
+    # GPU Support
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: all
+              capabilities: [gpu]
+
+    environment:
+      - ANTHROPIC_BASE_URL=${ANTHROPIC_BASE_URL}
+      - ANTHROPIC_AUTH_TOKEN=${ANTHROPIC_AUTH_TOKEN}
+      - ANTHROPIC_MODEL=${ANTHROPIC_MODEL}
+      - TZ=UTC
+      # GPU Environment
+      - NVIDIA_VISIBLE_DEVICES=all
+      - NVIDIA_DRIVER_CAPABILITIES=compute,utility
+      # Proxy settings (使用 host 网络模式，直接访问 127.0.0.1)
+      - HTTP_PROXY=http://127.0.0.1:7890
+      - HTTPS_PROXY=http://127.0.0.1:7890
+      - http_proxy=http://127.0.0.1:7890
+      - https_proxy=http://127.0.0.1:7890
+      - NO_PROXY=localhost,127.0.0.1
+      - no_proxy=localhost,127.0.0.1
+
+    volumes:
+      # Command and report directories for MD-based communication
+      - ../volumes/commands:/app/volumes/commands
+      - ../volumes/reports:/app/volumes/reports
+      # Workspace for Claude Code to work in
+      - ../volumes/workspace:/app/volumes/workspace
+      # Session state persistence
+      - ../volumes/sessions:/app/volumes/sessions
+      # Runtime logs (Claude Code terminal recording)
+      - ../volumes/logs:/app/volumes/logs
+      # Claude Code home directory (contains session jsonl files with thinking/tool_use)
+      - ../volumes/claude-home:/home/node/.claude
+      # Runtime context (written by planAgent)
+      - ../volumes/context:/app/volumes/context:ro
+      # Configuration
+      - ../config:/app/config:ro
+      # System logs
+      - ../logs:/app/logs
+
+    working_dir: /app/volumes/workspace
+
+    # Logging configuration
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"
+        max-file: "3"
+
+    # Health check
+    healthcheck:
+      test: ["CMD", "pgrep", "-f", "monitor.sh"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 10s
